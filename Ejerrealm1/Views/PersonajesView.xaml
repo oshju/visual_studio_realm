@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewmodels="clr-namespace:Ejerrealm1.viewmodels"
+    x:Class="Ejerrealm1.Views.PersonajesView">
+    <ContentPage.BindingContext> 
+        <viewmodels:PersonajesViewModel/> 
+    </ContentPage.BindingContext> 
+    <ContentPage.Content> 
+        <StackLayout> 
+            <ListView ItemsSource="{Binding Personajes}"> 
+                <ListView.ItemTemplate> 
+                    <DataTemplate> 
+                        <ViewCell> 
+                            <StackLayout Orientation="Vertical"> 
+                                <Label Text="{Binding Nombre}" TextColor="Blue"/> 
+                                <Label Text="{Binding Serie}" TextColor="Black"/> 
+                            </StackLayout> 
+                        </ViewCell> 
+                    </DataTemplate> 
+                </ListView.ItemTemplate> 
+            </ListView> 
+        </StackLayout> 
+    </ContentPage.Content> 
+</ContentPage>

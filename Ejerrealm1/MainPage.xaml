@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejerrealm1.MainPage">
+
+    <StackLayout> 
+            <Button Text="Mostrar Registros" x:Name="botonmostrarregistros" 
+                    HorizontalOptions="FillAndExpand"/> 
+            <Button Text="Insertar Registro" x:Name="botoninsertar" 
+                    HorizontalOptions="FillAndExpand"/> 
+            <Entry x:Name="txtid" HorizontalOptions="FillAndExpand" 
+                       Placeholder="Id Personaje"/> 
+            <Button Text="Detalles Registro" x:Name="botondetalles" 
+                    HorizontalOptions="FillAndExpand"/>             
+            <Button Text="Modificar Registro" x:Name="botonmodificar" 
+                    HorizontalOptions="FillAndExpand"/> 
+            <Button Text="Eliminar Registro" x:Name="botoneliminar" 
+                    HorizontalOptions="FillAndExpand"/> 
+            <Label x:Name="lblmensaje" FontSize="Large"/> 
+        </StackLayout> 
+</ContentPage>
